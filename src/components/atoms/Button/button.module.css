@@ -1,0 +1,28 @@
+.button {
+    padding: 1.1rem 1.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.label {
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+}
+
+.primary {
+    background: rgb(108, 95, 188);
+    color: rgb(255, 255, 255);
+    border: 0.1rem solid rgb(108, 95, 188);
+}
+
+.inverted {
+    background: rgb(255, 255, 255);
+    color: rgb(108, 95, 188);
+    border: 0.1rem solid rgb(108, 95, 188);
+}

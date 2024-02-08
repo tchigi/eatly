@@ -1,9 +1,12 @@
 import "./global.module.css"
+import Button from "./components/atoms/Button/Button.tsx";
 function App() {
 
   return (
     <div>
-      Hello world
+      <Button label={"Get started"}/>
+      <Button label={"Go Pro"} theme={"inverted"}/>
+      <Button label={"Download"} iconType={"arrow-right"}/>
     </div>
   )
 }
