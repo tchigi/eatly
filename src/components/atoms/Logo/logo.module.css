@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+.logoSpan {
+    color: rgb(108, 95, 188);
+    font-family: Poppins, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 130%;
+    pointer-events: none;
+}

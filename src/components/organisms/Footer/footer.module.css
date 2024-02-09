@@ -1,0 +1,10 @@
+.footer {
+    background-color: rgb(234, 234, 234);
+    align-self: center;
+}
+.footerContainer {
+    min-width: 90%;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}

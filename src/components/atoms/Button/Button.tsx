@@ -8,7 +8,10 @@ interface ButtonProps {
 }
 function Button({label, theme = "primary", iconType}:ButtonProps) {
     return (
-        <button className={`${styles.button} ${styles[theme]}`}>
+        <button
+            className={`${styles.button} ${styles[theme]}`}
+            onClick={() => {}}
+        >
             <label className={styles.label}>{label}</label>
             {iconType ? <Icon id={iconType}/> : <></> }
         </button>

@@ -1,14 +1,13 @@
 import "./global.module.css"
-import Button from "./components/atoms/Button/Button.tsx";
+import MainPage from "./components/pages/MainPage/MainPage.tsx";
+
 function App() {
 
-  return (
-    <div>
-      <Button label={"Get started"}/>
-      <Button label={"Go Pro"} theme={"inverted"}/>
-      <Button label={"Download"} iconType={"arrow-right"}/>
-    </div>
-  )
+    return (
+        <>
+            <MainPage/>
+        </>
+    )
 }
 
 export default App

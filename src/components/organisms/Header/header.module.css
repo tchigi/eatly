@@ -1,0 +1,11 @@
+.header {
+    min-width: 90%;
+    margin-top: 3.6rem;
+    align-self: center;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    gap: 6.4rem;
+}
