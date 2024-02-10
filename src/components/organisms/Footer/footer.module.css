@@ -1,10 +1,24 @@
 .footer {
+    min-width: 100%;
     background-color: rgb(234, 234, 234);
     align-self: center;
 }
+
 .footerContainer {
-    min-width: 90%;
+    width: 90%;
     padding-top: 6rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+.footerTop, .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerBottom {
+    margin-top: 3.6rem;
+    margin-bottom: 5.1rem;
 }

@@ -1,0 +1,47 @@
+.figure {
+    height: 33.8rem;
+    flex: 0 1 50%;
+    position: relative;
+}
+.figure > section,
+.graph,
+.foodImage,
+.arrow,
+.bottomLeftWave,
+.topRightWave {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.figure > section {
+    top: 10%;
+    left: 68%;
+}
+
+.foodImage {
+    top: 50%;
+    left: 50%;
+    border: 1.2rem solid rgb(104, 91, 184);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.graph {
+    top: 81%;
+    left: 20%;
+}
+
+.bottomLeftWave {
+    top: 100%;
+    left: -2%;
+}
+
+.topRightWave {
+    top: -3%;
+    left: 103%;
+}
+
+.arrow {
+    top: 31%;
+    left: 87%;
+}

@@ -1,0 +1,7 @@
+.bannerItem {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.5rem;
+}

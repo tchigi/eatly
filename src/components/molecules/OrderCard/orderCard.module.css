@@ -1,0 +1,23 @@
+.orderCardContainer {
+    width: 21.6rem;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-row-gap: 1rem;
+    align-items: center;
+    border-radius: 0.75rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0.37rem 1.46rem 2.23rem 0rem rgba(120, 120, 120, 0.7);
+}
+
+.orderCardInfo {
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.orderCardInfo > p:last-child {
+    align-self: flex-end;
+}

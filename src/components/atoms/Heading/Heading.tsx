@@ -8,15 +8,17 @@ interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
     fontSize: string;
     lineHeight: string;
     color: string;
+    letterSpacing?: string
 }
 
-function Heading({headingLevel = "p", fontFamily, fontWeight, fontSize, lineHeight, color, children}: HeadingProps) {
+function Heading({headingLevel = "p", fontFamily, fontWeight, fontSize, lineHeight, color, letterSpacing, children}: HeadingProps) {
     const inlineStyles = {
         fontFamily: `${fontFamily}, system-ui, sans-serif`,
         fontWeight: fontWeight,
         fontSize: fontSize,
         lineHeight: lineHeight,
         color: color,
+        letterSpacing: letterSpacing,
     }
 
     const NewHeading = ({...props}: React.HTMLAttributes<HTMLHeadingElement>) => React.createElement(headingLevel, props, children)
