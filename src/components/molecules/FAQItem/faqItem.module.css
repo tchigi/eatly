@@ -1,0 +1,77 @@
+.item {
+    display: grid;
+    grid-template-rows: auto 0fr auto;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+    row-gap: 0rem;
+}
+
+.gridActive {
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+}
+
+.item > * {
+    overflow: hidden;
+}
+
+
+.itemHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.h3 {
+    color: rgb(50, 49, 66);
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 1.46rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    letter-spacing: 0%;
+}
+
+.button {
+    position: relative;
+    width: 1.88rem;
+    height: 1.88rem;
+    border: 0.07rem solid rgb(108, 95, 188);
+    background: rgb(108, 95, 188);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button::after, .button::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+    background: rgb(255, 255, 255);
+    height: 0.08rem;
+    width: 0.68rem;
+    transition: ease-in-out 0.15s;
+}
+
+.button::before {
+    rotate: 90deg;
+}
+
+.buttonActive::before {
+    rotate: 0deg;
+}
+
+.itemBody {
+    padding: 0 3.75rem 0 0.5rem;
+}
+
+.p {
+    color: rgb(104, 104, 104);
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 1%;
+}

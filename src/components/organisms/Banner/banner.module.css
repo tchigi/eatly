@@ -14,18 +14,22 @@
     position: absolute;
     translate: -50% -50%;
 }
+
 .line1 {
     top: 52%;
     left: 13%;
 }
+
 .line2 {
     top: 52%;
     left: 15%;
 }
+
 .line3 {
     top: 50%;
     left: 93%;
 }
+
 .line4 {
     top: 50%;
     left: 95%;

@@ -1,16 +1,15 @@
 import Heading from "../Heading/Heading.tsx";
+import styles from "./orderStatus.module.css"
 
 interface OrderStatusProps {
-    label: string,
+    status: string,
 }
 
-function OrderStatus({label}: OrderStatusProps) {
-
+function OrderStatus({status}: OrderStatusProps) {
     return (
-        <Heading headingLevel={"p"} color={`${label === 'Cancelled' ? "rgb(241, 83, 78)" : "rgb(50, 49, 66)"}`}
-                 lineHeight={"140%"} fontWeight={"500"}
-                 fontFamily={"Poppins"} fontSize={"0.6rem"}>
-            {label}
+        <Heading headingLevel={"p"}
+                 headingStyles={`${styles.label} ${status === "Cancelled" ? styles.cancelled : styles.default}`}>
+            {status}
         </Heading>
     );
 }

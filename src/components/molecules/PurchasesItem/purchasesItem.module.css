@@ -1,0 +1,63 @@
+.purchasesItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.4rem;
+    padding: 1.57rem;
+    border: 0.1rem solid rgb(237, 242, 247);
+    border-radius: 1.18rem;
+    background: rgb(255, 255, 255);
+}
+
+.infoContainer {
+    display: flex;
+    width: 100%;
+}
+
+.icon {
+    width: 3.14rem;
+    height: 3.14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: rgb(0, 0, 0);
+    background-color: rgb(244, 240, 255);
+    border-radius: 50%;
+}
+
+.textContainer {
+    margin-left: 1rem;
+}
+
+.h3 {
+    color: rgb(26, 32, 44);
+    font-family: Manrope, system-ui, sans-serif;
+    font-size: 1.18rem;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0.04rem;
+}
+
+.p {
+    color: rgb(160, 174, 192);
+    font-family: Manrope, system-ui, sans-serif;
+    font-size: 0.98rem;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.04rem;
+}
+
+.price {
+    margin-left: auto;
+    color: rgb(26, 32, 44);
+    font-family: Manrope, system-ui, sans-serif;
+    font-size: 1.37rem;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0.02rem;
+}
+
+.range {
+
+}

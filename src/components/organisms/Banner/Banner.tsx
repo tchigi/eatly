@@ -20,10 +20,14 @@ function Banner() {
                 Reliable Customer Support <br/>
                 We Provide Great Experiences
             </BannerItem>
-            <CustomImage source={"src/assets/images/bannerLines/line1.png"} altText={"line1"} imageStyles={styles.line1}/>
-            <CustomImage source={"src/assets/images/bannerLines/line2.png"} altText={"line2"} imageStyles={styles.line2}/>
-            <CustomImage source={"src/assets/images/bannerLines/line3.png"} altText={"line3"} imageStyles={styles.line3}/>
-            <CustomImage source={"src/assets/images/bannerLines/line4.png"} altText={"line4"} imageStyles={styles.line4}/>
+            <CustomImage source={"src/assets/images/bannerLines/line1.png"} altText={"line1"}
+                         imageStyles={styles.line1}/>
+            <CustomImage source={"src/assets/images/bannerLines/line2.png"} altText={"line2"}
+                         imageStyles={styles.line2}/>
+            <CustomImage source={"src/assets/images/bannerLines/line3.png"} altText={"line3"}
+                         imageStyles={styles.line3}/>
+            <CustomImage source={"src/assets/images/bannerLines/line4.png"} altText={"line4"}
+                         imageStyles={styles.line4}/>
         </div>
     );
 }

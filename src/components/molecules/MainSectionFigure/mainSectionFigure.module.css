@@ -3,17 +3,12 @@
     flex: 0 1 50%;
     position: relative;
 }
-.figure > section,
-.graph,
-.foodImage,
-.arrow,
-.bottomLeftWave,
-.topRightWave {
+.figure > * {
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
-.figure > section {
+.figure > div {
     top: 10%;
     left: 68%;
 }

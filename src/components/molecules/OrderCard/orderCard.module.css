@@ -8,7 +8,7 @@
     align-items: center;
     border-radius: 0.75rem;
     background: rgb(255, 255, 255);
-    box-shadow: 0.37rem 1.46rem 2.23rem 0rem rgba(120, 120, 120, 0.7);
+    box-shadow: 0.37rem 0.46rem 1.23rem 0rem rgba(120, 120, 120, 0.2);
 }
 
 .orderCardInfo {
@@ -18,6 +18,20 @@
     justify-content: space-around;
 }
 
-.orderCardInfo > p:last-child {
+.h4 {
+    color: rgb(50, 49, 66);
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 0.97rem;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0rem;
+}
+.time {
     align-self: flex-end;
+    color: rgb(172, 173, 185);
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 0.67rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0rem;
 }

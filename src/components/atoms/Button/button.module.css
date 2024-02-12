@@ -23,6 +23,11 @@
     color: rgb(255, 255, 255);
     border: 0.1rem solid rgb(108, 95, 188);
 }
+
+.primary > svg {
+    stroke: rgb(255, 255, 255);
+}
+
 .primary:hover {
     background: rgba(108, 95, 188, 0.8);
 }
@@ -32,6 +37,11 @@
     color: rgb(108, 95, 188);
     border: 0.1rem solid rgb(108, 95, 188);
 }
+
+.inverted > svg {
+    stroke: rgb(108, 95, 188);
+}
+
 .inverted:hover {
     background: rgba(108, 95, 188, 0.2);
 }

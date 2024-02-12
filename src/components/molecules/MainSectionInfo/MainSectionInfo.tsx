@@ -8,16 +8,14 @@ function MainSectionInfo() {
         <div className={styles.mainSectionContainer}>
             <div className={styles.userCountContainer}>
                 <Hr marginTop={"none"} width={"3.4rem"}/>
-                <Heading headingLevel={"p"} fontFamily={"Poppins"} fontWeight={"600"} fontSize={"1rem"}
-                         lineHeight={"120%"} color={"rgba(32, 31, 31, 0.2)"} letterSpacing={"0.13rem"}>
+                <Heading headingLevel={"p"} headingStyles={styles.userCount}>
                     OVER 1000 USERS
                 </Heading>
             </div>
-            <Heading headingLevel={"h1"} fontFamily={"Poppins"} fontWeight={"600"} fontSize={"4.7rem"}
-                     lineHeight={"120%"} letterSpacing={"-0.2rem"} color={"rgb(32, 31, 31)"}>
+            <Heading headingLevel={"h1"} headingStyles={styles.h1}>
                 Enjoy Foods All Over The <span>World</span>
             </Heading>
-            <Heading headingLevel={"p"} fontFamily={"Inter"} fontWeight={"400"} fontSize={"1.13rem"} lineHeight={"1.75rem"} color={"rgb(103, 103, 103)"}>
+            <Heading headingLevel={"p"} headingStyles={styles.text}>
                 EatLy help you set saving goals, earn cash back offers, Go <br/> to disclaimer for more details and get
                 paychecks up to two <br/> days early. Get a <span>$20 bonus.</span>
             </Heading>

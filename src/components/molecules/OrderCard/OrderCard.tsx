@@ -12,20 +12,18 @@ interface OrderCardProps {
 
 function OrderCard({label, status, time, imageId}: OrderCardProps) {
     return (
-        <section aria-hidden className={styles.orderCardContainer}>
+        <div aria-hidden className={styles.orderCardContainer}>
             <CustomImage altText={imageId} source={`src/assets/images/${imageId}.png`}/>
             <div className={styles.orderCardInfo}>
-                <Heading headingLevel={"h4"} color={"rgb(50, 49, 66)"} lineHeight={"140%"} fontWeight={"600"}
-                         fontFamily={"Poppins"} fontSize={"1rem"}>
+                <Heading headingLevel={"h4"} headingStyles={styles.h4}>
                     {label}
                 </Heading>
-                <OrderStatus label={status}/>
-                <Heading headingLevel={"p"} color={"rgb(172, 173, 185)"} lineHeight={"140%"} fontWeight={"500"}
-                         fontFamily={"Poppins"} fontSize={"0.7rem"}>
+                <OrderStatus status={status}/>
+                <Heading headingLevel={"p"} headingStyles={styles.time}>
                     {time}
                 </Heading>
             </div>
-        </section>
+        </div>
     );
 }
 

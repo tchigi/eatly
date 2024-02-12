@@ -1,0 +1,63 @@
+.commentContainer {
+    padding: 2.5rem;
+    border-radius: 1.31rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 4.44rem;
+    height: 4.44rem;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.textContainer {
+    margin-left: 1.25rem;
+}
+
+.h3 {
+    color: rgb(3, 3, 20);
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 1.31rem;
+    font-weight: 500;
+    line-height: 1.96rem;
+    letter-spacing: 0rem;
+}
+
+.p {
+    color: rgb(94, 93, 93);
+    font-family: Quicksand, system-ui, sans-serif;
+    font-size: 1.04rem;
+    font-weight: 500;
+    line-height: 1.63rem;
+    letter-spacing: 0rem;
+}
+
+.header svg {
+    margin-left: auto;
+}
+
+.text {
+    color: rgb(99, 99, 99);
+    font-family: Poppins, system-ui, sans-serif;
+    font-style: italic;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.63rem;
+    letter-spacing: 0rem;
+    text-align: justify;
+}

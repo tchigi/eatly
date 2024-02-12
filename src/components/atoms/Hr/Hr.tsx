@@ -8,6 +8,7 @@ interface HrProps {
 function Hr({marginTop, width = "100%", height = "0", color}: HrProps) {
     return (
         <hr style={{
+            margin: "0",
             marginTop: marginTop,
             width: width,
             height: height,

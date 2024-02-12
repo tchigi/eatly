@@ -1,6 +1,31 @@
 .link {
     text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    transition: ease-in-out 0.3s;
 }
+
 .link:hover {
-    opacity: 0.9;
+    opacity: 0.8;
+}
+
+.linkP {
+    color: rgb(96, 96, 96);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 1.11rem;
+    font-weight: 500;
+    line-height: 1.67rem;
+    letter-spacing: 0%;
+}
+
+.link > svg {
+    stroke: rgb(96, 96, 96);
+}
+.linkH3 {
+    color: rgb(50, 49, 66);
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 1.61rem;
+    font-weight: 600;
+    line-height: 2.62rem;
+    letter-spacing: 0rem;
 }

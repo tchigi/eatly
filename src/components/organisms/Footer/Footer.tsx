@@ -15,8 +15,7 @@ function Footer() {
                 </div>
                 <Hr marginTop={"1.8rem"}/>
                 <div className={styles.footerBottom}>
-                    <Heading headingLevel={"p"} fontFamily={"Inter"} fontWeight={"500"} fontSize={"1rem"}
-                             lineHeight={"1.56rem"} color={"rgb(153, 153, 153)"}>
+                    <Heading headingLevel={"p"} headingStyles={styles.rights}>
                         © 2023 EATLY All Rights Reserved.
                     </Heading>
                     <SocialMediaContainer/>

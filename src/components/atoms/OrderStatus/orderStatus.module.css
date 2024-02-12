@@ -1,0 +1,16 @@
+.label {
+    color: rgb(50, 49, 66);
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 0.62rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0rem;
+}
+
+.default {
+    color: rgb(50, 49, 66);
+}
+
+.cancelled {
+    color: rgb(241, 83, 78);
+}

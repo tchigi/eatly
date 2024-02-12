@@ -5,3 +5,21 @@
     gap: 0.6rem;
     padding: 0.5rem;
 }
+
+.title {
+    color: rgb(255, 255, 255);
+    font-family: Public Sans, system-ui, sans-serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 3.38rem;
+    letter-spacing: 0rem;
+}
+
+.children {
+    color: rgb(197, 191, 237);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.35rem;
+    letter-spacing: 0rem;
+}
