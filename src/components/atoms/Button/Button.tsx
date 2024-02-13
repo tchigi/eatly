@@ -3,7 +3,7 @@ import Icon from "../Icon/Icon.tsx";
 
 interface ButtonProps {
     label: string;
-    theme?: string;
+    theme?: "primary" | "inverted";
     iconType?: string;
 }
 
