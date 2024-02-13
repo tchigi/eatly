@@ -1,4 +1,5 @@
 .badge {
+    width: min-content;
     border-radius: 0.34rem;
     padding: 0.2rem 0.4rem;
     color: rgb(218, 163, 26);
