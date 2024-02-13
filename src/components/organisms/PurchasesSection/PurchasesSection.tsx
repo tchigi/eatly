@@ -22,7 +22,7 @@ function PurchasesSection() {
                 </div>
                 <PurchasesInfo/>
             </div>
-            <Hr marginTop={"8.4rem"}/>
+            <Hr marginTop={"8rem"}/>
         </section>
     );
 }

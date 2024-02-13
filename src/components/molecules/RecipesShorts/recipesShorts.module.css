@@ -9,7 +9,6 @@
     grid-template-rows: 60% auto;
     transition: ease-in-out 0.3s;
     overflow: hidden;
-    /*will-change: contents;*/
     transform: translateZ(1px);
 }
 
@@ -27,7 +26,6 @@
 .shortsBody {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start;
     padding: 0.5rem 2rem;
 }

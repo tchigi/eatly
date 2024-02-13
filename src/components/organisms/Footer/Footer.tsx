@@ -13,7 +13,7 @@ function Footer() {
                     <Logo/>
                     <Navigation type={"footer"}/>
                 </div>
-                <Hr marginTop={"1.8rem"}/>
+                <Hr marginTop={"2.3rem"}/>
                 <div className={styles.footerBottom}>
                     <Heading headingLevel={"p"} headingStyles={styles.rights}>
                         © 2023 EATLY All Rights Reserved.

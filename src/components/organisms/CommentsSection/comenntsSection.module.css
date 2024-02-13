@@ -5,10 +5,10 @@
     flex-direction: column;
     gap: 5rem;
     align-items: center;
-    overflow: hidden;
 }
 
 .h2 {
+    padding-left: 1rem;
     font-family: Poppins, system-ui, sans-serif;
     font-size: 2.81rem;
     font-weight: 600;
@@ -17,8 +17,11 @@
 }
 
 .commentsContainer {
-    margin-left: 7.25rem;
+    margin-left: 6.4rem;
     display: grid;
-    grid-template-columns: 40% 60%;
-    column-gap: 2.9rem;
+    grid-template-columns: 43% 1fr;
+}
+
+.commentsContainer > div:first-child {
+    margin-right: 2.9rem;
 }

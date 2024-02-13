@@ -23,7 +23,7 @@ function RecipesSection() {
                     View All
                 </Link>
             </div>
-            <Hr marginTop={"7.5rem"}/>
+            <Hr marginTop={"7.6rem"}/>
         </section>
     );
 }

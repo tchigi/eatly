@@ -12,8 +12,7 @@ function MobileAppSection() {
                 </div>
                 <MobileAppSectionInfo/>
             </div>
-
-            <Hr marginTop={"7.5rem"}/>
+            <Hr marginTop={"7rem"}/>
         </section>
     );
 }

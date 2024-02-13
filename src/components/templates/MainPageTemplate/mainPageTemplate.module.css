@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column;
 }
-.wrapper > main {
+.main {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
 }

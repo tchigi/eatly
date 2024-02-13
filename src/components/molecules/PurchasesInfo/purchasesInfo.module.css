@@ -5,12 +5,12 @@
     padding: 2.8rem 2.4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
+    margin-right: 1rem;
 }
 
 .headerInfo {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 

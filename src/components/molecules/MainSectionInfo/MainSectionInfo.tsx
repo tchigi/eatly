@@ -7,7 +7,7 @@ function MainSectionInfo() {
     return (
         <div className={styles.mainSectionContainer}>
             <div className={styles.userCountContainer}>
-                <Hr marginTop={"none"} width={"3.4rem"}/>
+                <Hr marginTop={"0"} width={"3.4rem"}/>
                 <Heading headingLevel={"p"} headingStyles={styles.userCount}>
                     OVER 1000 USERS
                 </Heading>

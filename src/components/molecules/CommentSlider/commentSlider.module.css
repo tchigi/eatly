@@ -1,0 +1,27 @@
+.slider {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 71%;
+    gap: 2.9rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: inline mandatory;
+}
+
+.slider > * {
+    scroll-snap-align: start;
+}
+
+.slider::-webkit-scrollbar {
+    height: 0.7rem;
+}
+
+.slider::-webkit-scrollbar-track {
+    border-radius: 3.13rem;
+    background-color: rgba(108, 95, 188, 0.2);
+}
+
+.slider::-webkit-scrollbar-thumb {
+    border-radius: 3.13rem;
+    background-color: rgb(108, 95, 188);
+}

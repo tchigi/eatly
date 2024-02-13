@@ -1,11 +1,10 @@
 .orderCardContainer {
-    width: 21.6rem;
-    padding: 0.5rem 1rem;
+    width: 19.57rem;
+    padding: 0.25rem 1rem;
     display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 1fr;
-    grid-row-gap: 1rem;
-    align-items: center;
+    grid-template-columns: 25% auto;
+    gap: 0.6rem;
+    align-items: flex-end;
     border-radius: 0.75rem;
     background: rgb(255, 255, 255);
     box-shadow: 0.37rem 0.46rem 1.23rem 0rem rgba(120, 120, 120, 0.2);
@@ -15,22 +14,22 @@
     word-wrap: break-word;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .h4 {
     color: rgb(50, 49, 66);
     font-family: Poppins, system-ui, sans-serif;
-    font-size: 0.97rem;
+    font-size: 1.19rem;
     font-weight: 600;
     line-height: 140%;
     letter-spacing: 0rem;
 }
+
 .time {
     align-self: flex-end;
     color: rgb(172, 173, 185);
     font-family: Poppins, system-ui, sans-serif;
-    font-size: 0.67rem;
+    font-size: 0.82rem;
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0rem;

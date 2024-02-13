@@ -13,7 +13,7 @@ function MainPageTemplate() {
     return (
         <div className={styles.wrapper}>
             <Header/>
-            <main style={{display: "flex", flexDirection: "column", backgroundColor: "rgb(249, 249, 249)"}}>
+            <main className={styles.main}>
                 <MainSection/>
                 <Banner/>
                 <MobileAppSection/>

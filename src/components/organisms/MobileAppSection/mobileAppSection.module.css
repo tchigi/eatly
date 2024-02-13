@@ -1,15 +1,16 @@
 .section {
     width: 90%;
-    margin: 5rem auto 0;
+    margin: 7rem auto 0;
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% auto;
     gap: 4.57rem;
 }
 
 .mobile {
-    flex: 0 1 50%;
+    padding-right: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;

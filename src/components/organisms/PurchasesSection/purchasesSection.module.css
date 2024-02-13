@@ -1,26 +1,25 @@
 .section {
     width: 90%;
-    margin: 5rem auto 0;
+    margin: 8.3rem auto 0;
     display: flex;
     flex-direction: column;
 }
 
 .sectionContainer {
-    display: flex;
-    gap: 14rem;
-}
-
-.sectionContainer > * {
-    flex: 0 1 50%;
+    display: grid;
+    gap: 12rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .orderContainer {
     display: flex;
     flex-direction: column;
     gap: 3.1rem;
+    padding-left: 1.55rem;
 }
 
 .h2 {
+    padding-left: 0.45rem;
     font-family: Poppins, system-ui, sans-serif;
     font-size: 3.18rem;
     font-weight: 700;
@@ -31,5 +30,6 @@
 .orderItemsContainer {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 1rem;
 }

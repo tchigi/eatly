@@ -1,7 +1,6 @@
 .mainSectionContainer {
     display: flex;
-    gap: 4.57rem;
     width: 90%;
-    margin: 5rem auto 0;
+    margin: 4rem auto 0;
     padding-bottom: 7.5rem;
 }

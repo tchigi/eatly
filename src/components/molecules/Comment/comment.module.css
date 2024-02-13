@@ -1,10 +1,11 @@
 .commentContainer {
+    height: min-content;
     padding: 2.5rem;
     border-radius: 1.31rem;
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .header {

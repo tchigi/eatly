@@ -10,7 +10,7 @@ function Header() {
                 <Logo/>
                 <Navigation type={"header"}/>
             </div>
-            <Hr marginTop={"1.5rem"}/>
+            <Hr marginTop={"1.9rem"}/>
         </header>
     );
 }

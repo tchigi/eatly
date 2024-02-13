@@ -1,13 +1,15 @@
 .figure {
-    height: 33.8rem;
+    height: 34.8rem;
     flex: 0 1 50%;
     position: relative;
 }
+
 .figure > * {
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
+
 .figure > div {
     top: 10%;
     left: 68%;

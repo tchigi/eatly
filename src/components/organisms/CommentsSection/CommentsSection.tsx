@@ -1,6 +1,7 @@
 import styles from "./comenntsSection.module.css"
 import Heading from "../../atoms/Heading/Heading.tsx";
 import Comment from "../../molecules/Comment/Comment.tsx";
+import CommentSlider from "../../molecules/CommentSlider/CommentSlider.tsx";
 
 function CommentsSection() {
     return (
@@ -13,15 +14,7 @@ function CommentsSection() {
                     “ Online invoice payment helps companies save time, are faster and save maximum effort for the
                     clients and save maximum effort. Online invoice payment helps companies save time ”
                 </Comment>
-
-                {/* TODO Сделать слайдер, вынести в молекулу*/}
-
-                <div className={styles.slider}>
-                    <Comment type={"slider"} stars={4}>
-                        “ Online invoice payment helps companies save time, are faster and save maximum effort for the
-                        clients and save maximum effort. Online invoice payment helps companies save time ”
-                    </Comment>
-                </div>
+                <CommentSlider/>
             </div>
         </section>
     );
