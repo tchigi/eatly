@@ -16,8 +16,8 @@ function MainSectionInfo() {
                 Enjoy Foods All Over The <span>World</span>
             </Heading>
             <Heading headingLevel={"p"} headingStyles={styles.text}>
-                EatLy help you set saving goals, earn cash back offers, Go <br/> to disclaimer for more details and get
-                paychecks up to two <br/> days early. Get a <span>$20 bonus.</span>
+                EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get
+                paychecks up to two days early. Get a <span>$20 bonus.</span>
             </Heading>
             <div className={styles.buttonContainer}>
                 <Button label={"Get Started"}/>

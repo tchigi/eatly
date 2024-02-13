@@ -1,6 +1,4 @@
 .shorts {
-    width: 24.75rem;
-    height: 18.6rem;
     border: 0.08rem solid rgb(244, 244, 246);
     border-radius: 1.88rem;
     box-shadow: 0.37rem 4.46rem 2.23rem 0rem rgba(229, 229, 229, 0.7);
@@ -27,7 +25,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.5rem 2rem;
+    justify-content: flex-end;
+    padding: 0.5rem 2rem 1rem;
 }
 
 .infoContainer {
@@ -47,8 +46,8 @@
 
 .titleLine {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    position: relative;
 }
 
 .bookMark {
@@ -62,13 +61,32 @@
     border: rgb(108, 95, 188) 0.06rem solid;
     cursor: pointer;
     transition: ease-in-out 0.3s;
-    translate: 300% 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: 300% -50%;
 }
 
 .shorts:hover .bookMark {
-    translate: 0 0;
+    translate: 0 -50%;
 }
 
 .bookMark:hover {
     background: rgb(219, 217, 238);
+}
+
+@media only screen and (max-width: 450px) {
+    .shorts:hover .bookMark {
+        translate: -100% -50%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .shorts:hover .bookMark {
+        translate: -280% -50%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .shorts:hover .bookMark {
+        translate: -410% -50%;
+    }
 }

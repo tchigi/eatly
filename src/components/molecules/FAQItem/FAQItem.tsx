@@ -29,7 +29,7 @@ function FaqItem({question, children}: FAQItemProps) {
                     {children}
                 </Heading>
             </div>
-            <Hr marginTop={"1rem"}/>
+            <Hr/>
         </div>
     );
 }

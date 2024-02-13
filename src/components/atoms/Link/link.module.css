@@ -1,6 +1,7 @@
 .link {
     text-decoration: none;
     display: flex;
+    align-items: center;
     gap: 1rem;
     transition: ease-in-out 0.3s;
 }
@@ -16,6 +17,12 @@
     font-weight: 500;
     line-height: 1.67rem;
     letter-spacing: 0%;
+}
+.header {
+    color: rgb(96, 96, 96);
+}
+.footer {
+    color: rgb(153, 153, 153);
 }
 
 .link > svg {

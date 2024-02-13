@@ -25,3 +25,34 @@
 .commentsContainer > div:first-child {
     margin-right: 2.9rem;
 }
+
+@media only screen and (max-width: 1024px) {
+    .section {
+        gap: 3rem;
+        padding-top: 3rem;
+    }
+    .commentsContainer {
+        margin-left: 1rem;
+        grid-template-columns: 43% 1fr;
+    }
+    .commentsContainer > div:first-child {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .commentsContainer {
+        margin-left: 0;
+        grid-template-columns: unset;
+        grid-auto-flow: row;
+    }
+    .commentsContainer > div:first-child {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

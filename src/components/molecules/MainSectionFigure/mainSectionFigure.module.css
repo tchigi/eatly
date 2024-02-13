@@ -1,6 +1,5 @@
 .figure {
     height: 34.8rem;
-    flex: 0 1 50%;
     position: relative;
 }
 
@@ -11,8 +10,8 @@
 }
 
 .figure > div {
-    top: 10%;
-    left: 68%;
+    top: 62px;
+    left: 435px;
 }
 
 .foodImage {
@@ -24,21 +23,27 @@
 }
 
 .graph {
-    top: 81%;
-    left: 20%;
+    top: 472px;
+    left: 120px;
 }
 
 .bottomLeftWave {
-    top: 100%;
-    left: -2%;
+    bottom: -40px;
+    left: -16px;
 }
 
 .topRightWave {
-    top: -3%;
-    left: 103%;
+    top: 0px;
+    left: 99%;
 }
 
 .arrow {
-    top: 31%;
-    left: 87%;
+    top: 176px;
+    left: 544px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .figure {
+        display: none;
+    }
 }

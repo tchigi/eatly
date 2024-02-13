@@ -10,12 +10,12 @@ function Banner() {
                 Satisfied Costumers <br/>
                 All Great Over The World
             </BannerItem>
-            <Hr marginTop={"0"} width={"0"} height={"auto"} color={"rgba(197, 197, 197, .15)"}/>
+            <Hr width={"0"} height={"auto"} color={"rgba(197, 197, 197, .15)"}/>
             <BannerItem title={"4M"}>
                 Healthy Dishes Sold <br/>
                 Including Milk Shakes Smooth
             </BannerItem>
-            <Hr marginTop={"0"} width={"0"} height={"auto"} color={"rgba(197, 197, 197, .15)"}/>
+            <Hr width={"0"} height={"auto"} color={"rgba(197, 197, 197, .15)"}/>
             <BannerItem title={"99.99%"}>
                 Reliable Customer Support <br/>
                 We Provide Great Experiences

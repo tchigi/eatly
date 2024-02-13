@@ -16,6 +16,9 @@
     overflow: hidden;
 }
 
+.item > hr {
+    margin-top: 1rem;
+}
 
 .itemHeader {
     display: flex;

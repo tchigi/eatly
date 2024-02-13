@@ -33,3 +33,44 @@
     justify-content: flex-start;
     gap: 1rem;
 }
+
+.section > hr {
+    margin-top: 8rem;
+}
+
+@media only screen and (max-width: 1250px) {
+    .sectionContainer {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .section {
+        width: 70%;
+        margin: 3rem auto 0;
+    }
+    .sectionContainer {
+        grid-template-columns: unset;
+        grid-auto-rows: auto;
+        gap: 3rem;
+    }
+    .orderContainer {
+        gap: 3rem;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .section > hr {
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        width: 95%;
+        margin: 2rem auto 0;
+    }
+    .section > hr {
+        margin-top: 2rem;
+    }
+}

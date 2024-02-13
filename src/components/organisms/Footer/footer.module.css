@@ -11,6 +11,9 @@
     display: flex;
     flex-direction: column;
 }
+.footerContainer > hr {
+    margin-top: 2.3rem;
+}
 
 .footerTop, .footerBottom {
     display: flex;
@@ -33,4 +36,33 @@
     font-weight: 500;
     line-height: 1.56rem;
     letter-spacing: 0rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .footerContainer {
+        width: 90%;
+        padding-top: 3rem;
+    }
+    .footerContainer > hr {
+        margin-top: 2rem;
+    }
+    .footerBottom {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .footerTop > button {
+        scale: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footerContainer {
+        width: 95%;
+        padding-top: 2rem;
+    }
+    .footerContainer > hr {
+    }
+    .footerBottom {
+        margin-bottom: 2rem;
+    }
 }

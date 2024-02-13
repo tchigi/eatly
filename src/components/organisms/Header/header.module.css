@@ -9,3 +9,19 @@
     align-items: center;
     gap: 6.4rem;
 }
+.header > hr {
+    margin-top: 1.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        margin-top: 2rem;
+    }
+    .headerContainer {
+        justify-content: space-between;
+        gap: 0;
+    }
+    .header > hr {
+        margin-top: 2rem;
+    }
+}

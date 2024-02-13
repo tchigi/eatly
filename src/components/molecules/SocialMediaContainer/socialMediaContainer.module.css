@@ -2,3 +2,21 @@
     display: flex;
     gap: 3.3rem;
 }
+
+@media only screen and (max-width: 1024px) {
+    .socialMediaContainer {
+        gap: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .socialMediaContainer {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .socialMediaContainer {
+        gap: 1.5rem;
+    }
+}

@@ -20,10 +20,10 @@ function Navigation({ type }:NavProps) {
     }
     return (
         <nav className={styles.nav}>
-            <Link linkTo={"/aboutus"}>
+            <Link linkTo={"/aboutus"} type={"footer"}>
                 About Us
             </Link>
-            <Link linkTo={"/contact"}>
+            <Link linkTo={"/contact"} type={"footer"}>
                 Contact
             </Link>
         </nav>

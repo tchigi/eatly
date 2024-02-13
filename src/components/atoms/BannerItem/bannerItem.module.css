@@ -23,3 +23,18 @@
     line-height: 1.35rem;
     letter-spacing: 0rem;
 }
+
+@media only screen and (max-width: 425px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .children {
+        font-size: 0.8rem;
+    }
+
+    .bannerItem {
+        gap: 0.2rem;
+        padding: 0.2rem;
+    }
+}

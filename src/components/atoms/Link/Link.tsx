@@ -10,7 +10,7 @@ interface LinkProps {
     type?: string;
 }
 
-function Link({children, linkTo, iconType, type = "default"}: LinkProps) {
+function Link({children, linkTo, iconType, type = "header"}: LinkProps) {
     if (type === "shorts") {
         return (
             <a href={linkTo} className={styles.link}>
@@ -24,7 +24,7 @@ function Link({children, linkTo, iconType, type = "default"}: LinkProps) {
 
     return (
         <a href={linkTo} className={styles.link}>
-            <Heading headingLevel={"p"} headingStyles={styles.linkP}>
+            <Heading headingLevel={"p"} headingStyles={`${styles.linkP} ${styles[type]}`}>
                 {children}
             </Heading>
             {iconType ? <Icon id={iconType}/> : null}

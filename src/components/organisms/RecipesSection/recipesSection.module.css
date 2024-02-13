@@ -25,9 +25,51 @@
     display: flex;
     gap: 1.9rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .section:has(a) a {
     align-self: flex-end;
     padding-right: 1rem;
+}
+
+.section > hr {
+    margin-top: 7.6rem;
+}
+
+@media only screen and (max-width: 1250px) {
+    .section {
+        margin: 3rem auto 0;
+    }
+
+    .sectionContainer {
+        gap: 3rem;
+        padding-right: 0;
+    }
+
+    .recipesContainer {
+        gap: 1rem;
+    }
+
+    .section > hr {
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .section {
+        width: 95%;
+        margin: 2rem auto 0;
+    }
+
+    .sectionContainer {
+        gap: 2rem;
+    }
+
+    .recipesContainer {
+        gap: 1rem;
+    }
+
+    .section > hr {
+        margin-top: 2rem;
+    }
 }
