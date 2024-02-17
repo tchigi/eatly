@@ -1,7 +1,7 @@
 import styles from "./recipesShorts.module.css"
 import Badge from "../../atoms/Badge/Badge.tsx";
 import Heading from "../../atoms/Heading/Heading.tsx";
-import Link from "../../atoms/Link/Link.tsx";
+import LinkAtom from "../../atoms/LinkAtom/LinkAtom.tsx";
 import Icon from "../../atoms/Icon/Icon.tsx";
 import CustomImage from "../../atoms/Image/CustomImage.tsx";
 
@@ -22,9 +22,9 @@ function RecipesShorts({badge, title, time, score, imgSrc}: RecipesShortsProps) 
             <div className={styles.shortsBody}>
                 <Badge label={badge}/>
                 <div className={styles.titleLine}>
-                    <Link linkTo={"/"} type={"shorts"}>
+                    <LinkAtom linkTo={"/"} type={"shorts"}>
                         {title}
-                    </Link>
+                    </LinkAtom>
                     <button className={styles.bookMark} onClick={() => {
                     }}>
                         <Icon id={"bookMark"}/>

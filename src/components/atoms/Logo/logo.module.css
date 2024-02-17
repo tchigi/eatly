@@ -5,7 +5,9 @@
     gap: 0.7rem;
     background: inherit;
     border: none;
+    text-decoration: none;
     cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
 .logoSpan {
     color: rgb(108, 95, 188);
@@ -14,4 +16,7 @@
     font-weight: 600;
     line-height: 130%;
     pointer-events: none;
+}
+.logo:hover {
+    opacity: 0.8;
 }

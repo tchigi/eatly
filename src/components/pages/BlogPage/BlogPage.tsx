@@ -1,7 +1,10 @@
+import BlogPageTemplate from "../../templates/BlogPageTemplate/BlogPageTemplate.tsx";
 
 function BlogPage() {
     return (
-        <div>BlogPage</div>
+        <>
+            <BlogPageTemplate/>
+        </>
     );
 }
 

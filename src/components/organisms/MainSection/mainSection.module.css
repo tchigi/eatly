@@ -3,8 +3,7 @@
     grid-template-columns: 43% 50%;
     justify-content: space-between;
     width: 90%;
-    margin: 4rem auto 0;
-    padding-bottom: 7.5rem;
+    margin: 3rem auto 0;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -16,13 +15,11 @@
 }
 @media only screen and (max-width: 1024px) {
     .mainSectionContainer {
-        margin: 3rem auto 0;
         padding-bottom: 3rem;
     }
 }
 @media only screen and (max-width: 768px) {
     .mainSectionContainer {
-        margin: 2rem auto 0;
         padding-bottom: 2rem;
     }
 }
