@@ -20,7 +20,7 @@ function LinkAtom({children, linkTo, iconType, type = "header"}: LinkProps) {
 
     if (type === "shorts") {
         return (
-            <NavLink to={linkTo} className={({isActive}) => isActive ? styles.active : styles.link}>
+            <NavLink to={linkTo} className={`${styles.link} ${styles[type]}`}>
                 <Heading headingLevel={"h3"} headingStyles={styles.linkH3}>
                     {children}
                 </Heading>

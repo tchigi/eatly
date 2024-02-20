@@ -2,10 +2,60 @@
     width: min-content;
     border-radius: 0.34rem;
     padding: 0.2rem 0.4rem;
-    color: rgb(218, 163, 26);
     font-family: Poppins, system-ui, sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.19rem;
     letter-spacing: 0rem;
+    background: rgb(228, 154, 176);
+    color: rgb(113, 30, 55);
+    white-space: nowrap;
+}
+
+.pizza {
+    background: rgb(247, 237, 208);
+    color: rgb(218, 163, 26);
+}
+
+.cookies {
+    background: rgb(139, 93, 51);
+    color: rgb(60, 40, 22);
+}
+
+.chicken {
+    background: rgb(134, 157, 122);
+    color: rgb(49, 59, 43);
+}
+
+.pasta {
+    background: rgb(167, 205, 189);
+    color: rgb(44, 78, 64);
+}
+
+.dessert {
+    background: rgb(167, 205, 189);
+    color: rgb(44, 78, 64);
+}
+
+.baking {
+    background: rgb(185, 163, 148);
+    color: rgb(74, 59, 48);
+}
+
+.asian {
+    background: rgb(212, 197, 199);
+    color: rgb(117, 87, 91);
+}
+
+.pakistani {
+    background: rgb(129, 141, 146);
+    color: rgb(38, 42, 44);
+}
+.indian {
+    background: rgb(173, 226, 93);
+    color: rgb(70, 104, 18);
+}
+.biryani {
+    background: rgb(236, 184, 165);
+    color: rgb(168, 71, 36);
 }

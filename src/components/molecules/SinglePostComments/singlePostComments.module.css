@@ -1,0 +1,21 @@
+.comments {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 4rem;
+}
+
+.h4 {
+    color: rgb(37, 37, 37);
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 1.88rem;
+    font-weight: 600;
+    line-height: 2.78rem;
+    letter-spacing: 0%;
+}
+
+.commentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}

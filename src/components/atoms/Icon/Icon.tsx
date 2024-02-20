@@ -11,6 +11,7 @@ import Money from "../../../assets/icons/money/money.tsx";
 import ChevronDown from "../../../assets/icons/chevronDown/chevronDown.tsx";
 import Quotes from "../../../assets/icons/quotes/quotes.tsx";
 import CommentStar from "../../../assets/icons/commentStar/commentStar.tsx";
+import PaginationArrow from "../../../assets/icons/paginationArrow/paginationArrow.tsx";
 
 interface IconProps {
     id: string;
@@ -18,6 +19,8 @@ interface IconProps {
 
 function Icon({id}: IconProps) {
     switch (id) {
+        case "paginationArrow":
+            return <PaginationArrow/>
         case "commentStar":
             return <CommentStar/>
         case "quotes":

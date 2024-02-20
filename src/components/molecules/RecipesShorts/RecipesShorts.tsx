@@ -6,7 +6,7 @@ import Icon from "../../atoms/Icon/Icon.tsx";
 import CustomImage from "../../atoms/Image/CustomImage.tsx";
 
 interface RecipesShortsProps {
-    badge: string;
+    badge: Array<string>;
     title: string;
     time: string;
     score: string;
@@ -20,7 +20,11 @@ function RecipesShorts({badge, title, time, score, imgSrc}: RecipesShortsProps) 
                 <CustomImage source={imgSrc} altText={"shortsImage"}/>
             </div>
             <div className={styles.shortsBody}>
-                <Badge label={badge}/>
+                <div className={styles.badgeContainer}>
+                    {badge.slice(0,3).map((item)=>(
+                        <Badge label={item} type={item} key={item}/>
+                    ))}
+                </div>
                 <div className={styles.titleLine}>
                     <LinkAtom linkTo={"/"} type={"shorts"}>
                         {title}

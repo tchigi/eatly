@@ -8,6 +8,8 @@
     transition: ease-in-out 0.3s;
     overflow: hidden;
     transform: translateZ(1px);
+    width: 24.75rem;
+    height: 18.6rem;
 }
 
 .shorts:hover {
@@ -15,18 +17,25 @@
 }
 
 .bg {
-    object-fit: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
 }
-
+.bg > img {
+    object-position: left bottom;
+    object-fit: cover;
+    width: 100%;
+    height: 130%;
+}
 .shortsBody {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
     padding: 0.5rem 2rem 1rem;
+}
+
+.badgeContainer {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .infoContainer {
@@ -48,6 +57,13 @@
     display: flex;
     width: 100%;
     position: relative;
+
+}
+.titleLine a > h3 {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .bookMark {
@@ -73,20 +89,4 @@
 
 .bookMark:hover {
     background: rgb(219, 217, 238);
-}
-
-@media only screen and (max-width: 450px) {
-    .shorts:hover .bookMark {
-        translate: -100% -50%;
-    }
-}
-@media only screen and (max-width: 375px) {
-    .shorts:hover .bookMark {
-        translate: -280% -50%;
-    }
-}
-@media only screen and (max-width: 350px) {
-    .shorts:hover .bookMark {
-        translate: -410% -50%;
-    }
 }

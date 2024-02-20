@@ -5,6 +5,9 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import NotFoundPage from "./components/pages/NotFoundPage/NotFoundPage.tsx";
 import BlogPage from "./components/pages/BlogPage/BlogPage.tsx";
 import MainPage from "./components/pages/MainPage/MainPage.tsx";
+import {Provider} from "react-redux";
+import {store} from "./store/store.ts";
+import PostPage from "./components/pages/PostPage/PostPage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -17,18 +20,24 @@ const router = createBrowserRouter([
             },
             {
                 path: "blog",
-                element: <BlogPage/>
+                element: <BlogPage/>,
             },
             {
                 path: "*",
                 element: <NotFoundPage/>
-            }
+            },
+            {
+                path: "post/:postId",
+                element: <PostPage/>,
+            },
         ],
     }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
+        <Provider store={store}>
+            <RouterProvider router={router}/>
+        </Provider>
     </React.StrictMode>,
 )

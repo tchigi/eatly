@@ -9,7 +9,7 @@ interface CommentProps {
     type: "main" | "slider",
     name?: string,
     period?: string,
-    stars: number,
+    stars?: number,
     children: React.ReactNode,
 }
 
@@ -18,15 +18,9 @@ function Comment({type = "slider", name, period, stars, children}: CommentProps)
         return (
             <div className={styles.commentContainer}>
                 <div className={styles.header}>
-                    <div className={styles.avatar}>
-                        <CustomImage source={"src/assets/images/avatar.png"} altText={"Comment Avatar"}/>
-                    </div>
                     <div className={styles.textContainer}>
                         <Heading headingLevel={"h3"} headingStyles={styles.h3}>
-                            {name}
-                        </Heading>
-                        <Heading headingLevel={"p"} headingStyles={styles.p}>
-                            {period}
+                            {"@" + name}
                         </Heading>
                     </div>
                     <Icon id={"quotes"}/>
@@ -34,7 +28,6 @@ function Comment({type = "slider", name, period, stars, children}: CommentProps)
                 <div className={styles.text}>
                     {children}
                 </div>
-                <CommentStars count={stars}/>
             </div>
         )
     }
@@ -43,7 +36,6 @@ function Comment({type = "slider", name, period, stars, children}: CommentProps)
             <div className={styles.text}>
                 {children}
             </div>
-            <CommentStars count={stars}/>
         </div>
     );
 }

@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    gap: 2rem;
+}
+.container > button:first-child {
+    rotate: 180deg;
+}

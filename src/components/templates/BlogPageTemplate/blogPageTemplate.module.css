@@ -1,9 +1,21 @@
 .main {
     flex-grow: 1;
+    background-color: rgb(249, 249, 249);
+}
+.container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(249, 249, 249);
+    align-items: center;
     gap: 5rem;
+    width: 90%;
+    margin: 5rem auto;
+}
+.h2 {
+    font-family: Poppins, system-ui,sans-serif;
+    font-size: 2.81rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0rem;
 }
 
 @media only screen and (max-width: 1024px) {
