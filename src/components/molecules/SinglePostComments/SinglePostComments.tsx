@@ -1,6 +1,6 @@
 import styles from './singlePostComments.module.css';
 import Heading from "../../atoms/Heading/Heading.tsx";
-import {useGetPostCommentsQuery} from "../../../store/services/singlePostApi.ts";
+import {useGetPostCommentsQuery} from "../../../store/services/commentsApi.ts";
 import Comment from "../Comment/Comment.tsx";
 
 interface SinglePostCommentsProps {

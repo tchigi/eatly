@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from "./pagination.module.css"
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../../store/store.ts";
@@ -6,7 +5,7 @@ import {useGetBlogQuery} from "../../../store/services/blogApi.ts";
 import Button from "../../atoms/Button/Button.tsx";
 import {incrementPage, decrementPage} from "../../../store/slices/blogSlice.ts";
 
-function Pagination(props) {
+function Pagination() {
     const dispatch = useDispatch()
     const page = useSelector((state: RootState) => state.blog.page)
     const {data} = useGetBlogQuery(page)
@@ -20,8 +19,8 @@ function Pagination(props) {
 
     return (
         <div className={styles.container}>
-            <Button label={null} iconType={"paginationArrow"} theme={"ghost"} disabled={isLeftArrowDisabled()} onclickFunction={() => dispatch(decrementPage())}/>
-            <Button label={null} iconType={"paginationArrow"} theme={"ghost"} disabled={isRightArrowDisabled()} onclickFunction={() => dispatch(incrementPage())}/>
+            <Button label={null} iconPos={"right"} iconType={"paginationArrow"} theme={"ghost"} disabled={isLeftArrowDisabled()} onclickFunction={() => dispatch(decrementPage())}/>
+            <Button label={null} iconPos={"right"} iconType={"paginationArrow"} theme={"ghost"} disabled={isRightArrowDisabled()} onclickFunction={() => dispatch(incrementPage())}/>
         </div>
     );
 }

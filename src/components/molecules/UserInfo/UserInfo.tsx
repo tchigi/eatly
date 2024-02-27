@@ -1,5 +1,5 @@
 import styles from './userInfo.module.css';
-import {useGetUserInfoQuery} from "../../../store/services/singlePostApi.ts";
+import {useGetUserInfoQuery} from "../../../store/services/userApi.ts";
 import CustomImage from "../../atoms/Image/CustomImage.tsx";
 import Heading from "../../atoms/Heading/Heading.tsx";
 

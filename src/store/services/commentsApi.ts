@@ -8,7 +8,10 @@ export const commentsApi = createApi({
         getComments: builder.query<CommentsType, number>({
             query: () => `comments?limit=6&select=id,body,user`,
         }),
+        getPostComments: builder.query<CommentsType, number>({
+            query: (value) => `comments/post/${value}`,
+        }),
     }),
 })
 
-export const {useGetCommentsQuery} = commentsApi
+export const {useGetCommentsQuery, useGetPostCommentsQuery} = commentsApi
