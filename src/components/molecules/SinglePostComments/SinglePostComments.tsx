@@ -2,6 +2,8 @@ import styles from './singlePostComments.module.css';
 import Heading from "../../atoms/Heading/Heading.tsx";
 import {useGetPostCommentsQuery} from "../../../store/services/commentsApi.ts";
 import Comment from "../Comment/Comment.tsx";
+import {useSelector} from "react-redux";
+import {RootState} from "../../../store/store.ts";
 
 interface SinglePostCommentsProps {
     id: number
@@ -9,6 +11,7 @@ interface SinglePostCommentsProps {
 
 function SinglePostComments({id}: SinglePostCommentsProps) {
     const {data, error, isLoading} = useGetPostCommentsQuery(id)
+    const newComments = useSelector((state: RootState) => state.newComments.newComments)
 
     return (
         <div className={styles.comments}>
@@ -20,9 +23,9 @@ function SinglePostComments({id}: SinglePostCommentsProps) {
                 <>Loading...</>
             ) : data ? (
                 <div className={styles.commentsContainer}>
-                    {data.comments.length
-                        ? data.comments.map(item => (
-                            <Comment type={"main"} name={item.user.username} key={item.id}>
+                    {data.comments.length || newComments.length
+                        ? data.comments.concat(newComments).map(item => (
+                            <Comment type={"main"} name={item.user.username} key={item.body}>
                                 {item.body}
                             </Comment>
                         ))

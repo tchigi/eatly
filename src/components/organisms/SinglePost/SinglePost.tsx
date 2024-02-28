@@ -6,6 +6,7 @@ import Icon from "../../atoms/Icon/Icon.tsx";
 import Button from "../../atoms/Button/Button.tsx";
 import UserInfo from "../../molecules/UserInfo/UserInfo.tsx";
 import SinglePostComments from "../../molecules/SinglePostComments/SinglePostComments.tsx";
+import NewComment from "../../molecules/NewComment/NewComment.tsx";
 
 function SinglePost() {
     const {postId} = useParams<{ postId: string }>()
@@ -40,7 +41,15 @@ function SinglePost() {
                         <Button label={"All Articles"} theme={"inverted"} iconType={"arrowRight"} iconPos={"left"}
                                 onclickFunction={() => navigate("/blog")}/>
                     </div>
+
                     <SinglePostComments id={Number(postId)}/>
+
+                    <div className={styles.newCommentContainer}>
+                        <Heading headingLevel={"h4"} headingStyles={styles.h4}>
+                            Add <span>comment</span>
+                        </Heading>
+                        <NewComment postId={Number(postId)}/>
+                    </div>
                 </>
 
             ) : null

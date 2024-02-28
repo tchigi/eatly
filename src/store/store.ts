@@ -1,5 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit'
 import blogReducer from "./slices/blogSlice.ts"
+import newCommentsReducer from "./slices/newCommentsSlice.ts"
 import {blogApi} from "./services/blogApi.ts";
 import {recipesApi} from "./services/recipesApi.ts";
 import {commentsApi} from "./services/commentsApi.ts";
@@ -10,6 +11,7 @@ import {userApi} from "./services/userApi.ts";
 export const store = configureStore({
     reducer: {
         blog: blogReducer,
+        newComments: newCommentsReducer,
         [blogApi.reducerPath]: blogApi.reducer,
         [recipesApi.reducerPath]: recipesApi.reducer,
         [commentsApi.reducerPath]: commentsApi.reducer,

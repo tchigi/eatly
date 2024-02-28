@@ -1,5 +1,4 @@
 import styles from "../MainPageTemplate/mainPageTemplate.module.css";
-import Blog from "../../organisms/Blog/Blog.tsx";
 import SinglePost from "../../organisms/SinglePost/SinglePost.tsx";
 
 

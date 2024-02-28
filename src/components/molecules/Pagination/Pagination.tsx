@@ -14,7 +14,7 @@ function Pagination() {
         return page === 1
     }
     function isRightArrowDisabled() {
-        return data.total <= data.skip + data.limit
+        return data ? data.total <= data.skip + data.limit : false
     }
 
     return (

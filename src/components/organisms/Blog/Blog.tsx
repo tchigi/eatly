@@ -1,6 +1,6 @@
 import styles from './blog.module.css';
 import {useGetBlogQuery} from "../../../store/services/blogApi.ts";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import {RootState} from "../../../store/store.ts";
 import BlogPost from "../../molecules/BlogPost/BlogPost.tsx";
 import Pagination from "../../molecules/Pagination/Pagination.tsx";
@@ -15,14 +15,14 @@ function Blog() {
                 <>Oh no, there was an error</>
             ) : isLoading ? (
                 <>Loading...</>
-            ) : data.posts ? (
+            ) : data ? (
                 <>
                     <div className={styles.grid}>
                         {
                             data.posts.map((post) => (
                                 <BlogPost key={post.id} id={post.id} title={post.title} body={post.body}
                                           reactions={post.reactions}
-                                          tags={post.tags}/>
+                                          tags={post.tags} userId={post.userId}/>
                             ))
                         }
                     </div>

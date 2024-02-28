@@ -1,5 +1,5 @@
 export type BlogType = {
-    posts: Array<BlogPost>,
+    posts: Array<BlogPostType>,
     total: number,
     skip: number,
     limit: number,
@@ -11,4 +11,5 @@ export type BlogPostType = {
     body: string,
     reactions: string,
     tags: Array<string>,
+    userId: number
 }

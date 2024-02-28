@@ -16,7 +16,7 @@ function CommentsSection() {
                 <>Oh no, there was an error</>
             ) : isLoading ? (
                 <>Loading...</>
-            ) : data.comments ? (
+            ) : data ? (
                 <div className={styles.commentsContainer}>
                     <Comment type={"main"} name={data.comments[0].user.username}>
                         {data.comments[0].body}

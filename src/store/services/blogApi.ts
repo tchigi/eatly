@@ -6,7 +6,7 @@ export const blogApi = createApi({
     baseQuery: fetchBaseQuery({baseUrl: 'https://dummyjson.com/'}),
     endpoints: (builder) => ({
         getBlog: builder.query<BlogType, number>({
-            query: (page) => `posts?limit=12&skip=${page * 12}&select=id,title,body,reactions,tags`,
+            query: (page) => `posts?limit=12&skip=${page * 12}&select=id,title,body,reactions,tags,userId`,
         }),
     }),
 })
