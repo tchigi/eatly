@@ -17,12 +17,11 @@ function FaqItem({question, children}: FAQItemProps) {
 
     return (
         <div className={`${styles.item} ${isActive ? styles.gridActive : ""}`}>
-            <div className={styles.itemHeader}>
+            <div className={styles.itemHeader} onClick={onClickHandler}>
                 <Heading headingLevel={"h3"} headingStyles={styles.h3}>
                     {question}
                 </Heading>
-                <button className={`${styles.button} ${isActive ? styles.buttonActive : ""}`}
-                        onClick={onClickHandler}></button>
+                <button className={`${styles.button} ${isActive ? styles.buttonActive : ""}`}/>
             </div>
             <div className={styles.itemBody}>
                 <Heading headingLevel={"p"} headingStyles={styles.p}>

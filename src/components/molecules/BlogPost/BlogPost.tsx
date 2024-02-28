@@ -18,7 +18,7 @@ function BlogPost({title, tags, reactions, body, id, userId}: BlogPostProps) {
     const convertTags = [...tags].map(x => "#" + x).join(", ")
 
     return (
-        <NavLink to={`/post/${id}`} className={styles.container}>
+        <NavLink to={`/post/${id}`} className={styles.container} data-testid={"shortsPost"}>
             <div className={styles.titleContainer}>
                 <Heading headingStyles={styles.title} headingLevel={"h3"}>
                     {title}

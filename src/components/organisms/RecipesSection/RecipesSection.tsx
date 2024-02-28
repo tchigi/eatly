@@ -3,12 +3,9 @@ import RecipesShorts from "../../molecules/RecipesShorts/RecipesShorts.tsx";
 import Heading from "../../atoms/Heading/Heading.tsx";
 import Hr from "../../atoms/Hr/Hr.tsx";
 import {useGetRecipesQuery} from "../../../store/services/recipesApi.ts";
-import BlogPost from "../../molecules/BlogPost/BlogPost.tsx";
-import Pagination from "../../molecules/Pagination/Pagination.tsx";
 
 function RecipesSection() {
     const {data, error, isLoading} = useGetRecipesQuery()
-
 
     return (
         <section className={styles.section} id="recipes">
@@ -21,7 +18,7 @@ function RecipesSection() {
                         <>Oh no, there was an error</>
                     ) : isLoading ? (
                         <>Loading...</>
-                    ) : data.recipes ? (
+                    ) : data ? (
                         <>
                             {
                                 [...data.recipes].sort((a, b) => b.rating - a.rating).slice(0, 3).map((item) => (

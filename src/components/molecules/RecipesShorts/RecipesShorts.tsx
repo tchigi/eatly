@@ -9,7 +9,7 @@ interface RecipesShortsProps {
     badge: Array<string>;
     title: string;
     time: string;
-    score: string;
+    score: number;
     imgSrc: string;
 }
 
@@ -17,11 +17,11 @@ function RecipesShorts({badge, title, time, score, imgSrc}: RecipesShortsProps) 
     return (
         <div className={styles.shorts}>
             <div className={styles.bg}>
-                <CustomImage source={imgSrc} altText={"shortsImage"}/>
+                <CustomImage source={imgSrc} altText={"Shorts Image"}/>
             </div>
             <div className={styles.shortsBody}>
                 <div className={styles.badgeContainer}>
-                    {badge.slice(0,3).map((item)=>(
+                    {badge.slice(0, 3).map((item) => (
                         <Badge label={item} type={item} key={item}/>
                     ))}
                 </div>

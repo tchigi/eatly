@@ -4,8 +4,8 @@ import Heading from "../../atoms/Heading/Heading.tsx";
 
 function BlogPageTemplate() {
     return (
-        <main className={styles.main}>
-            <div className={styles.container}>
+        <main className={styles.main} data-testid={"main"}>
+            <div className={styles.container} data-testid={"blogPage"}>
                 <Heading headingLevel={"h2"} headingStyles={styles.h2}>
                     Latest <span>Articles</span>
                 </Heading>

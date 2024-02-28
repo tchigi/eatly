@@ -5,7 +5,7 @@ export const recipesApi = createApi({
     reducerPath: 'recipesApi',
     baseQuery: fetchBaseQuery({baseUrl: 'https://dummyjson.com/'}),
     endpoints: (builder) => ({
-        getRecipes: builder.query<RecipesType, number>({
+        getRecipes: builder.query<RecipesType, void>({
             query: () => `recipes?limit=100&select=id,name,tags,prepTimeMinutes,cookTimeMinutes,rating,image`,
         }),
     }),

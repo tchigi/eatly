@@ -9,7 +9,7 @@ import styles from "./mainPageTemplate.module.css";
 
 function MainPageTemplate() {
     return (
-        <main className={styles.main}>
+        <main className={styles.main} data-testid={"main"}>
             <MainSection/>
             <Banner/>
             <MobileAppSection/>
