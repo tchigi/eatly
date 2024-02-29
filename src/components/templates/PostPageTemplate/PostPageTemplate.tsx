@@ -1,4 +1,4 @@
-import styles from "../MainPageTemplate/mainPageTemplate.module.css";
+import styles from "./postPageTemplate.module.css";
 import SinglePost from "../../organisms/SinglePost/SinglePost.tsx";
 
 

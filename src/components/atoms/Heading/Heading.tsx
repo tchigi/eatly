@@ -7,7 +7,11 @@ interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
 }
 
 function Heading({headingLevel = "p", headingStyles, children}: HeadingProps) {
+    // ^^^ Паттерн Фасад - Facade
+
     const NewHeading = ({...props}: React.HTMLAttributes<HTMLHeadingElement>) => React.createElement(headingLevel, props, children)
+
+    // ^^^ Паттерн Constructor - Конструктор
 
     return <NewHeading className={headingStyles}>{children}</NewHeading>
 }

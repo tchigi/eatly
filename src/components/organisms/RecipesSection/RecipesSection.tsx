@@ -22,7 +22,7 @@ function RecipesSection() {
                         <>
                             {
                                 [...data.recipes].sort((a, b) => b.rating - a.rating).slice(0, 3).map((item) => (
-
+                                    // ^^^ Паттерн Цепочка ответственности (Chain of responsibility)
                                     <RecipesShorts badge={item.tags} title={item.name}
                                                    time={`${item.cookTimeMinutes + item.prepTimeMinutes}min`}
                                                    score={item.rating}

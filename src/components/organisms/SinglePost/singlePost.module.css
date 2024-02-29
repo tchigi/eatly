@@ -64,17 +64,3 @@
 .postInfoContainer button > svg {
     rotate: 180deg;
 }
-
-.newCommentContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.h4 {
-    font-family: Poppins, system-ui, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 3.46rem;
-    letter-spacing: 0%;
-}

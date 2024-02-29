@@ -19,6 +19,8 @@ export const blogSlice = createSlice({
             state.page -= 1
         },
     },
+
+    //^^^ Паттерн Итератор
 })
 
 // Action creators are generated for each case reducer function

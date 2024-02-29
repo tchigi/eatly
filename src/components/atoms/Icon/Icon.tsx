@@ -50,6 +50,8 @@ function Icon({id}: IconProps) {
         default:
             return <></>
     }
+
+    // ^^^ Паттерн Фабричный метод - Factory Method
 }
 
 export default Icon;

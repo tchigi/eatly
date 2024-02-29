@@ -10,10 +10,12 @@ interface FAQItemProps {
 
 function FaqItem({question, children}: FAQItemProps) {
     const [isActive, setIsActive] = useState(false)
+    // ^^^ Паттерн State - Состояние
 
     function onClickHandler() {
         setIsActive(prevState => !prevState)
     }
+    // ^^^ Паттерн Наблюдатель (Observer)
 
     return (
         <div className={`${styles.item} ${isActive ? styles.gridActive : ""}`}>

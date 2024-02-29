@@ -20,9 +20,9 @@ function Blog() {
                     <div className={styles.grid}>
                         {
                             data.posts.map((post) => (
-                                <BlogPost key={post.id} id={post.id} title={post.title} body={post.body}
-                                          reactions={post.reactions}
-                                          tags={post.tags} userId={post.userId}/>
+                                <BlogPost key={post.id} post={post}/>
+
+                                // ^^^ Паттерн Абстрактная фабрика (abstract factory);
                             ))
                         }
                     </div>

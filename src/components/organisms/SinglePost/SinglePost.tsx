@@ -10,7 +10,10 @@ import NewComment from "../../molecules/NewComment/NewComment.tsx";
 
 function SinglePost() {
     const {postId} = useParams<{ postId: string }>()
-    const {data, error, isLoading} = useGetSinglePostQuery(Number(postId))
+    const adaptedPostId = Number(postId)
+    // ^^^ Паттерн Адаптер (Adapter)
+
+    const {data, error, isLoading} = useGetSinglePostQuery(adaptedPostId)
     const navigate = useNavigate()
 
     return (
@@ -41,15 +44,8 @@ function SinglePost() {
                         <Button label={"All Articles"} theme={"inverted"} iconType={"arrowRight"} iconPos={"left"}
                                 onclickFunction={() => navigate("/blog")}/>
                     </div>
-
-                    <SinglePostComments id={Number(postId)}/>
-
-                    <div className={styles.newCommentContainer}>
-                        <Heading headingLevel={"h4"} headingStyles={styles.h4}>
-                            Add <span>comment</span>
-                        </Heading>
-                        <NewComment postId={Number(postId)}/>
-                    </div>
+                    <SinglePostComments id={adaptedPostId}/>
+                    <NewComment postId={adaptedPostId}/>
                 </>
 
             ) : null

@@ -58,3 +58,13 @@
     letter-spacing: 0rem;
     text-align: justify;
 }
+
+
+@media only screen and (max-width: 425px) {
+    .header > svg {
+        display: none;
+    }
+    .commentContainer {
+        padding: 1.5rem;
+    }
+}

@@ -43,8 +43,8 @@ describe("App component", () => {
     })
     test("App navigate to BlogPage", async () => {
         render(<MockApp href={"/"}/>)
-        const user = userEvent.setup()
         let link = screen.getAllByText("Blog")[0] as HTMLAnchorElement;
+        const user = userEvent.setup()
 
         await user.click(link)
 

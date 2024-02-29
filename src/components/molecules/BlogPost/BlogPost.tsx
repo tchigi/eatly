@@ -6,29 +6,31 @@ import {NavLink} from "react-router-dom";
 import UserInfo from "../UserInfo/UserInfo.tsx";
 
 interface BlogPostProps {
-    title: string,
-    tags: Array<string>,
-    reactions: string,
-    body: string,
-    id: number,
-    userId: number
+    post: {
+        title: string,
+        tags: Array<string>,
+        reactions: string,
+        body: string,
+        id: number,
+        userId: number
+    }
 }
 
-function BlogPost({title, tags, reactions, body, id, userId}: BlogPostProps) {
-    const convertTags = [...tags].map(x => "#" + x).join(", ")
+function BlogPost({post}: BlogPostProps) {
+    const convertTags = [...post.tags].map(x => "#" + x).join(", ")
 
     return (
-        <NavLink to={`/post/${id}`} className={styles.container} data-testid={"shortsPost"}>
+        <NavLink to={`/post/${post.id}`} className={styles.container} data-testid={"shortsPost"}>
             <div className={styles.titleContainer}>
                 <Heading headingStyles={styles.title} headingLevel={"h3"}>
-                    {title}
+                    {post.title}
                 </Heading>
             </div>
             <div className={styles.middleContainer}>
                 <div className={styles.firstLine}>
-                    <UserInfo userId={userId}/>
+                    <UserInfo userId={post.userId}/>
                     <div className={styles.reactionsContainer}>
-                        <p>{reactions}</p>
+                        <p>{post.reactions}</p>
                         <Icon id={"star"}/>
                     </div>
                 </div>
@@ -36,7 +38,7 @@ function BlogPost({title, tags, reactions, body, id, userId}: BlogPostProps) {
                     {convertTags}
                 </Heading>
             </div>
-            <BlogPostBody body={body}/>
+            <BlogPostBody body={post.body}/>
         </NavLink>
     );
 }

@@ -23,6 +23,9 @@ export const newCommentsSlice = createSlice({
         addNewComment: (state, action) => {
             state.newComments.push(action.payload)
         },
+
+        //^^^ Паттерн Команда (Command)
+
         clearNewComments: (state) => {
             state.newComments = []
         }

@@ -9,6 +9,7 @@ import {singlePostApi} from "./services/singlePostApi.ts";
 import {userApi} from "./services/userApi.ts";
 
 export const store = configureStore({
+    // ^^^ Паттерн Store
     reducer: {
         blog: blogReducer,
         newComments: newCommentsReducer,

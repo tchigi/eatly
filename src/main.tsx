@@ -30,6 +30,8 @@ const router = createBrowserRouter([
                 path: "post/:postId",
                 element: <PostPage/>,
             },
+
+            // ^^^ Паттерн Стратегия (Strategy)
         ],
     }
 ])
