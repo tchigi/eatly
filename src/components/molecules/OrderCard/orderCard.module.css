@@ -7,7 +7,7 @@
     align-items: flex-end;
     border-radius: 0.75rem;
     background: rgb(255, 255, 255);
-    box-shadow: 0.37rem 0.46rem 1.23rem 0rem rgba(120, 120, 120, 0.2);
+    box-shadow: 0.37rem 0.46rem 1.23rem 0 rgba(120, 120, 120, 0.2);
 }
 
 .orderCardInfo {
@@ -22,7 +22,6 @@
     font-size: 1.19rem;
     font-weight: 600;
     line-height: 140%;
-    letter-spacing: 0rem;
 }
 
 .time {
@@ -32,5 +31,4 @@
     font-size: 0.82rem;
     font-weight: 500;
     line-height: 140%;
-    letter-spacing: 0rem;
 }

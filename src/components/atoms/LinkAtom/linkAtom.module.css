@@ -29,7 +29,6 @@
     font-size: 1.11rem;
     font-weight: 500;
     line-height: 1.67rem;
-    letter-spacing: 0%;
 }
 .header {
     color: rgb(96, 96, 96);
@@ -46,5 +45,4 @@
     font-size: 1.61rem;
     font-weight: 600;
     line-height: 2.62rem;
-    letter-spacing: 0rem;
 }

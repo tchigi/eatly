@@ -11,7 +11,6 @@ function NotFoundPage() {
             <Heading headingLevel={"p"} headingStyles={styles.p}>
                 Go to <Link to={"/"}>Home</Link>
             </Heading>
-
         </main>
     )
 }

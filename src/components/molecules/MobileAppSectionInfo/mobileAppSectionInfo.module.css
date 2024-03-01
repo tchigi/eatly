@@ -12,7 +12,6 @@
     font-size: 3.18rem;
     font-weight: 700;
     line-height: 3.64rem;
-    letter-spacing: 0rem;
     color: rgb(24, 24, 27);
 }
 
@@ -30,7 +29,6 @@
     font-size: 1.27rem;
     font-weight: 400;
     line-height: 1.91rem;
-    letter-spacing: 0rem;
 }
 
 .li::before {

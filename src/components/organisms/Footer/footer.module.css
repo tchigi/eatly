@@ -35,7 +35,6 @@
     font-size: 1.06rem;
     font-weight: 500;
     line-height: 1.56rem;
-    letter-spacing: 0rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -60,8 +59,7 @@
         width: 95%;
         padding-top: 2rem;
     }
-    .footerContainer > hr {
-    }
+
     .footerBottom {
         margin-bottom: 2rem;
     }
