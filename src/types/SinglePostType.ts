@@ -4,5 +4,5 @@ export type SinglePostType = {
     body: string,
     userId: number,
     tags: Array<string>,
-    reactions: number
+    reactions: { likes: number, dislikes: number }
 }

@@ -32,7 +32,7 @@ function SinglePost() {
                             <UserInfo userId={data.userId}/>
                             <div className={styles.tagsContainer}>
                                 <div className={styles.reactionContainer}>
-                                    {data.reactions}
+                                    {data.reactions.likes}
                                     <Icon id={"star"}/>
                                 </div>
                                 <p>{data.tags.map(item => "#" + item).join(", ")}</p>
