@@ -2,6 +2,7 @@ import styles from './userInfo.module.css';
 import {useGetUserInfoQuery} from "../../../store/services/userApi.ts";
 import CustomImage from "../../atoms/Image/CustomImage.tsx";
 import Heading from "../../atoms/Heading/Heading.tsx";
+import Spinner from "../../atoms/Spinner/Spinner.tsx";
 
 interface UserInfoProps {
     userId: number
@@ -15,7 +16,7 @@ function UserInfo({userId}:UserInfoProps) {
             {error ? (
                 <>Oh no, there was an error</>
             ) : isLoading ? (
-                <>Loading...</>
+                <Spinner/>
             ) : data ? (
                 <div className={styles.userInfo}>
                     <div className={styles.avatar}>
