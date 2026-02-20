@@ -19,7 +19,7 @@
 .bg {
     overflow: hidden;
 }
-.bg > img {
+.bg > img, .bg > div {
     object-position: left bottom;
     object-fit: cover;
     width: 100%;
