@@ -2,6 +2,10 @@ import styles from "./banner.module.css"
 import BannerItem from "../../atoms/BannerItem/BannerItem.tsx";
 import Hr from "../../atoms/Hr/Hr.tsx";
 import CustomImage from "../../atoms/Image/CustomImage.tsx";
+import line1 from "../../../assets/images/bannerLines/line1.png";
+import line2 from "../../../assets/images/bannerLines/line2.png";
+import line3 from "../../../assets/images/bannerLines/line3.png";
+import line4 from "../../../assets/images/bannerLines/line4.png";
 
 function Banner() {
     return (
@@ -20,13 +24,13 @@ function Banner() {
                 Reliable Customer Support <br/>
                 We Provide Great Experiences
             </BannerItem>
-            <CustomImage source={"src/assets/images/bannerLines/line1.png"} altText={"line1"}
+            <CustomImage source={line1} altText={"line1"}
                          imageStyles={styles.line1}/>
-            <CustomImage source={"src/assets/images/bannerLines/line2.png"} altText={"line2"}
+            <CustomImage source={line2} altText={"line2"}
                          imageStyles={styles.line2}/>
-            <CustomImage source={"src/assets/images/bannerLines/line3.png"} altText={"line3"}
+            <CustomImage source={line3} altText={"line3"}
                          imageStyles={styles.line3}/>
-            <CustomImage source={"src/assets/images/bannerLines/line4.png"} altText={"line4"}
+            <CustomImage source={line4} altText={"line4"}
                          imageStyles={styles.line4}/>
         </div>
     );

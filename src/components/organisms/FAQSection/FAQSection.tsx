@@ -2,12 +2,13 @@ import styles from "./faqSection.module.css"
 import Heading from "../../atoms/Heading/Heading.tsx";
 import CustomImage from "../../atoms/Image/CustomImage.tsx";
 import FAQItem from "../../molecules/FAQItem/FAQItem.tsx";
+import faqWave from "../../../assets/images/faqWave.png";
 
 function FAQSection() {
     return (
         <section className={styles.section} id="faq">
             <div className={styles.titleContainer}>
-                <CustomImage source={"src/assets/images/faqWave.png"} altText={"Wave"}/>
+                <CustomImage source={faqWave} altText={"Wave"}/>
                 <Heading headingLevel={"h2"} headingStyles={styles.h2}>
                     Frequently Asked <br/>
                     <span>Questions</span>
