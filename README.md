@@ -1,6 +1,6 @@
 # Eatly — Enjoy foods all over the World
 
-Веб-приложение для просмотра рецептов и чтения кулинарного блога. Реализовано на React + TypeScript с использованием Redux Toolkit и RTK Query.
+Продуманный SPA на React 18 + TypeScript с чёткой архитектурой по принципу Atomic Design. Управление состоянием и работа с API реализованы через Redux Toolkit и RTK Query, навигация — React Router v6, стили изолированы через CSS Modules. Кодовая база покрыта юнит- и интеграционными тестами на Vitest + Testing Library.
 
 ## Демо
 
