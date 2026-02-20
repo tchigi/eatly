@@ -9,7 +9,7 @@ export type BlogPostType = {
     id: number,
     title: string,
     body: string,
-    reactions: string,
+    reactions: { likes: number, dislikes: number },
     tags: Array<string>,
     userId: number
 }

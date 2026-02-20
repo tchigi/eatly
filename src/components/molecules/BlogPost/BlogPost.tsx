@@ -9,7 +9,7 @@ interface BlogPostProps {
     post: {
         title: string,
         tags: Array<string>,
-        reactions: string,
+        reactions: { likes: number, dislikes: number },
         body: string,
         id: number,
         userId: number
@@ -30,7 +30,7 @@ function BlogPost({post}: BlogPostProps) {
                 <div className={styles.firstLine}>
                     <UserInfo userId={post.userId}/>
                     <div className={styles.reactionsContainer}>
-                        <p>{post.reactions}</p>
+                        <p>{post.reactions.likes}</p>
                         <Icon id={"star"}/>
                     </div>
                 </div>
