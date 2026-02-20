@@ -14,7 +14,7 @@ function Navigation({type}: NavProps) {
             <LinkAtom linkTo={"/#faq"} type={type}>
                 FAQ
             </LinkAtom>
-            <LinkAtom linkTo={"/blog"} type={type}>
+            <LinkAtom linkTo={"/blog"} type={type} highlighted>
                 Blog
             </LinkAtom>
         </nav>
