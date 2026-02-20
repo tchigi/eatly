@@ -4,6 +4,7 @@ import {useSelector} from "react-redux";
 import {RootState} from "../../../store/store.ts";
 import BlogPost from "../../molecules/BlogPost/BlogPost.tsx";
 import Pagination from "../../molecules/Pagination/Pagination.tsx";
+import Spinner from "../../atoms/Spinner/Spinner.tsx";
 
 function Blog() {
     const page = useSelector((state: RootState) => state.blog.page)
@@ -14,7 +15,7 @@ function Blog() {
             {error ? (
                 <>Oh no, there was an error</>
             ) : isLoading ? (
-                <>Loading...</>
+                <Spinner/>
             ) : data ? (
                 <>
                     <div className={styles.grid}>

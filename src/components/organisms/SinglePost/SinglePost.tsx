@@ -7,6 +7,7 @@ import Button from "../../atoms/Button/Button.tsx";
 import UserInfo from "../../molecules/UserInfo/UserInfo.tsx";
 import SinglePostComments from "../../molecules/SinglePostComments/SinglePostComments.tsx";
 import NewComment from "../../molecules/NewComment/NewComment.tsx";
+import Spinner from "../../atoms/Spinner/Spinner.tsx";
 
 function SinglePost() {
     const {postId} = useParams<{ postId: string }>()
@@ -21,7 +22,7 @@ function SinglePost() {
             {error ? (
                 <>Oh no, there was an error</>
             ) : isLoading ? (
-                <>Loading...</>
+                <Spinner/>
             ) : data ? (
                 <>
                     <div className={styles.postInfoContainer}>

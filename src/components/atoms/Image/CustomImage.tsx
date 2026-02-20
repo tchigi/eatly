@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import styles from './customImage.module.css';
+import Spinner from "../Spinner/Spinner.tsx";
 
 interface ImageProps {
     source: string;
@@ -28,7 +29,7 @@ function CustomImage({source, altText, imageStyles}: ImageProps) {
         <>
             {isLoading && (
                 <div className={`${styles.spinnerWrapper} ${imageStyles ?? ''}`}>
-                    <div className={styles.spinner}/>
+                    <Spinner/>
                 </div>
             )}
             <img

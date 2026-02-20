@@ -4,6 +4,7 @@ import {useGetPostCommentsQuery} from "../../../store/services/commentsApi.ts";
 import Comment from "../Comment/Comment.tsx";
 import {useSelector} from "react-redux";
 import {RootState} from "../../../store/store.ts";
+import Spinner from "../../atoms/Spinner/Spinner.tsx";
 
 interface SinglePostCommentsProps {
     id: number
@@ -20,7 +21,7 @@ function SinglePostComments({id}: SinglePostCommentsProps) {
             {error ? (
                 <>Oh no, there was an error</>
             ) : isLoading ? (
-                <>Loading...</>
+                <Spinner/>
             ) : data ? (
                 <div className={styles.commentsContainer}>
                     {data.comments.length || newComments.length

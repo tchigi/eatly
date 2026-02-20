@@ -3,6 +3,7 @@ import RecipesShorts from "../../molecules/RecipesShorts/RecipesShorts.tsx";
 import Heading from "../../atoms/Heading/Heading.tsx";
 import Hr from "../../atoms/Hr/Hr.tsx";
 import {useGetRecipesQuery} from "../../../store/services/recipesApi.ts";
+import Spinner from "../../atoms/Spinner/Spinner.tsx";
 
 function RecipesSection() {
     const {data, error, isLoading} = useGetRecipesQuery()
@@ -17,7 +18,7 @@ function RecipesSection() {
                     {error ? (
                         <>Oh no, there was an error</>
                     ) : isLoading ? (
-                        <>Loading...</>
+                        <Spinner/>
                     ) : data ? (
                         <>
                             {

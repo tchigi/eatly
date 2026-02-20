@@ -3,6 +3,7 @@ import Heading from "../../atoms/Heading/Heading.tsx";
 import Comment from "../../molecules/Comment/Comment.tsx";
 import CommentSlider from "../../molecules/CommentSlider/CommentSlider.tsx";
 import {useGetCommentsQuery} from "../../../store/services/commentsApi.ts";
+import Spinner from "../../atoms/Spinner/Spinner.tsx";
 
 function CommentsSection() {
     const {data, error, isLoading} = useGetCommentsQuery()
@@ -15,7 +16,7 @@ function CommentsSection() {
             {error ? (
                 <>Oh no, there was an error</>
             ) : isLoading ? (
-                <>Loading...</>
+                <Spinner/>
             ) : data ? (
                 <div className={styles.commentsContainer}>
                     <Comment type={"main"} name={data.comments[0].user.username}>
