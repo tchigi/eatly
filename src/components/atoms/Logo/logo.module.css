@@ -4,9 +4,16 @@
     justify-content: center;
     gap: 0.7rem;
     background: inherit;
-    border: none;
+    text-decoration: none;
     cursor: pointer;
+    transition: ease-in-out 0.3s;
+    border: 1px transparent dashed;
 }
+
+.logo > svg {
+    transition: ease-in-out 0.3s;
+}
+
 .logoSpan {
     color: rgb(108, 95, 188);
     font-family: Poppins, sans-serif;
@@ -14,4 +21,12 @@
     font-weight: 600;
     line-height: 130%;
     pointer-events: none;
+}
+
+.logo:hover {
+    border: 1px rgb(108, 95, 188) dashed;
+}
+
+.logo:hover > svg {
+    rotate: -90deg
 }

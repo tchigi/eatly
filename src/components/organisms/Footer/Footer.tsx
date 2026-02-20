@@ -7,7 +7,7 @@ import Heading from "../../atoms/Heading/Heading.tsx";
 
 function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer}  data-testid={"footer"}>
             <div className={styles.footerContainer}>
                 <div className={styles.footerTop}>
                     <Logo/>

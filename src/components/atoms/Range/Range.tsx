@@ -5,7 +5,13 @@ interface RangeProps {
 }
 
 function Range({value}: RangeProps) {
-    const theme = value < 25 ? "red" : value < 50 ? "yellow" : "purple"
+    const theme = themeDecorator(value)
+
+    function themeDecorator(value: number) {
+        return value < 25 ? "red" : value < 50 ? "yellow" : "purple"
+    }
+
+    // ^^^ Паттерн Декоратор (Decorator)
 
     return (
         <div className={styles.rangeBg + " " + styles[theme]}>

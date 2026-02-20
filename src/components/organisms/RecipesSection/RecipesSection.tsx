@@ -1,27 +1,39 @@
 import styles from './recipesSection.module.css';
-import Link from "../../atoms/Link/Link.tsx";
 import RecipesShorts from "../../molecules/RecipesShorts/RecipesShorts.tsx";
 import Heading from "../../atoms/Heading/Heading.tsx";
 import Hr from "../../atoms/Hr/Hr.tsx";
+import {useGetRecipesQuery} from "../../../store/services/recipesApi.ts";
 
 function RecipesSection() {
+    const {data, error, isLoading} = useGetRecipesQuery()
+
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="recipes">
             <div className={styles.sectionContainer}>
                 <Heading headingLevel={"h2"} headingStyles={styles.h2}>
                     Our Top <span>Recipes</span>
                 </Heading>
                 <div className={styles.recipesContainer}>
-                    <RecipesShorts badge={"Pizza"} title={"Chicken"} time={"25 min"} score={"4.9"}
-                                   imgSrc={"src/assets/images/resturentImage.png"}/>
-                    <RecipesShorts badge={"Pizza"} title={"Chicken"} time={"25 min"} score={"4.9"}
-                                   imgSrc={"src/assets/images/resturentImage.png"}/>
-                    <RecipesShorts badge={"Pizza"} title={"Chicken"} time={"25 min"} score={"4.9"}
-                                   imgSrc={"src/assets/images/resturentImage.png"}/>
+                    {error ? (
+                        <>Oh no, there was an error</>
+                    ) : isLoading ? (
+                        <>Loading...</>
+                    ) : data ? (
+                        <>
+                            {
+                                [...data.recipes].sort((a, b) => b.rating - a.rating).slice(0, 3).map((item) => (
+                                    // ^^^ Паттерн Цепочка ответственности (Chain of responsibility)
+                                    <RecipesShorts badge={item.tags} title={item.name}
+                                                   time={`${item.cookTimeMinutes + item.prepTimeMinutes}min`}
+                                                   score={item.rating}
+                                                   imgSrc={item.image} key={item.id}/>
+
+                                ))
+                            }
+                        </>
+                    ) : null
+                    }
                 </div>
-                <Link linkTo={"/"} iconType={"arrowRight"}>
-                    View All
-                </Link>
             </div>
             <Hr/>
         </section>

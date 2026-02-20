@@ -1,0 +1,63 @@
+.newCommentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.h4 {
+    font-family: Poppins, system-ui, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.46rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.input {
+    padding: 1rem;
+    width: 100%;
+    border: 0.13rem solid rgb(108, 95, 188);
+    min-height: 20rem;
+    border-radius: 1.13rem;
+    background: rgb(249, 249, 249);
+    box-sizing: border-box;
+
+    color: rgb(8, 20, 32);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.63rem;
+    transition: ease-in-out 0.3s;
+}
+
+.input:focus {
+    box-shadow: 0 0.24rem 2.93rem 0 rgba(108, 95, 188, 0.25);
+}
+
+.input::placeholder {
+    color: rgb(182, 182, 182);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 1.13rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+}
+
+.container > button {
+    width: 40%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .newCommentContainer {
+        gap: 2rem;
+    }
+
+    .input {
+        min-height: 10rem;
+    }
+}

@@ -1,7 +1,6 @@
 .section {
-    padding: 14rem 2rem 12rem 0;
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +21,6 @@
     font-size: 2.81rem;
     font-weight: 600;
     line-height: 120%;
-    letter-spacing: 0rem;
     text-align: center;
 }
 
@@ -37,14 +35,12 @@
 
 @media only screen and (max-width: 1024px) {
     .section {
-        padding: 3rem 0;
         gap: 3rem;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .section {
-        padding: 2rem 0;
         gap: 2rem;
     }
 }
@@ -52,6 +48,6 @@
 @media only screen and (max-width: 450px) {
     .section {
         width: 95%;
-        margin: 0 auto;
+        margin: 0 auto 2rem;
     }
 }

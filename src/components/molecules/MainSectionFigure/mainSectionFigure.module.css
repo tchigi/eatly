@@ -3,15 +3,25 @@
     position: relative;
 }
 
-.figure > * {
+.orderContainer {
     position: absolute;
-    transform: translate(-50%, -50%);
     z-index: 10;
+    top: 0;
+    right: 0;
 }
 
-.figure > div {
-    top: 62px;
-    left: 435px;
+.topRightWave {
+    position: absolute;
+    top: -2rem;
+    right: -3rem;
+}
+
+.foodContainer {
+    position: absolute;
+    z-index: 9;
+    translate: -50% -50%;
+    top: 50%;
+    right: -6rem;
 }
 
 .foodImage {
@@ -22,25 +32,29 @@
     z-index: 0;
 }
 
+.arrow {
+    position: absolute;
+    top: 2rem;
+    right: -3rem;
+}
+
+.graphContainer {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 27rem;
+}
+
 .graph {
-    top: 472px;
-    left: 120px;
+
 }
 
 .bottomLeftWave {
-    bottom: -40px;
-    left: -16px;
+    position: absolute;
+    bottom: -2rem;
+    left: -2rem;
 }
 
-.topRightWave {
-    top: 0px;
-    left: 99%;
-}
-
-.arrow {
-    top: 176px;
-    left: 544px;
-}
 
 @media only screen and (max-width: 1250px) {
     .figure {

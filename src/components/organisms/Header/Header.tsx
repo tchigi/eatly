@@ -5,7 +5,7 @@ import Hr from "../../atoms/Hr/Hr.tsx";
 
 function Header() {
     return (
-        <header className={styles.header}>
+        <header className={styles.header} data-testid={"header"}>
             <div className={styles.headerContainer}>
                 <Logo/>
                 <Navigation type={"header"}/>

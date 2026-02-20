@@ -1,25 +1,19 @@
 import styles from "./commentSlider.module.css"
 import Comment from "../Comment/Comment.tsx";
+import {CommentsType} from "../../../types/CommentsType.ts";
 
-function CommentSlider() {
+interface CommentSliderProps {
+    comments: CommentsType
+}
+
+function CommentSlider({comments}:CommentSliderProps) {
     return (
         <div className={styles.slider}>
-            <Comment type={"slider"} stars={4}>
-                “ Online invoice payment helps companies save time, are faster and save maximum effort for the
-                clients and save maximum effort. Online invoice payment helps companies save time ”
-            </Comment>
-            <Comment type={"slider"} stars={3}>
-                “ Online invoice payment helps companies save time, are faster and save maximum effort for the
-                clients and save maximum effort. Online invoice payment helps companies save time ”
-            </Comment>
-            <Comment type={"slider"} stars={5}>
-                “ Online invoice payment helps companies save time, are faster and save maximum effort for the
-                clients and save maximum effort. Online invoice payment helps companies save time ”
-            </Comment>
-            <Comment type={"slider"} stars={1}>
-                “ Online invoice payment helps companies save time, are faster and save maximum effort for the
-                clients and save maximum effort. Online invoice payment helps companies save time ”
-            </Comment>
+            {comments.comments.map(item => (
+                <Comment type={"slider"} key={item.id}>
+                    {item.body}
+                </Comment>
+            ))}
         </div>
     );
 }

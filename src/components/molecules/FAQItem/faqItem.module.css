@@ -4,7 +4,11 @@
     grid-template-rows: auto 0fr auto;
     width: 100%;
     transition: ease-in-out 0.3s;
-    row-gap: 0rem;
+    row-gap: 0;
+}
+
+.item:hover .itemHeader {
+    background: rgba(108, 95, 188, 0.4);
 }
 
 .gridActive {
@@ -24,7 +28,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 1rem;
+    padding: 0 1rem;
+    transition: ease-in-out 0.3s;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 
 .h3 {
@@ -33,7 +40,6 @@
     font-size: 1.46rem;
     font-weight: 600;
     line-height: 3.7rem;
-    letter-spacing: 0%;
 }
 
 .button {
@@ -82,5 +88,4 @@
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 160%;
-    letter-spacing: 1%;
 }

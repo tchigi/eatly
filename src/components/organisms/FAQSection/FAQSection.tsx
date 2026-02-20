@@ -5,7 +5,7 @@ import FAQItem from "../../molecules/FAQItem/FAQItem.tsx";
 
 function FAQSection() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="faq">
             <div className={styles.titleContainer}>
                 <CustomImage source={"src/assets/images/faqWave.png"} altText={"Wave"}/>
                 <Heading headingLevel={"h2"} headingStyles={styles.h2}>

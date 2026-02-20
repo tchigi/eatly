@@ -1,6 +1,5 @@
 .section {
     width: 100%;
-    padding-top: 7.25rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -13,7 +12,6 @@
     font-size: 2.81rem;
     font-weight: 600;
     line-height: 1.6rem;
-    letter-spacing: 0rem;
 }
 
 .commentsContainer {
@@ -29,7 +27,6 @@
 @media only screen and (max-width: 1024px) {
     .section {
         gap: 3rem;
-        padding-top: 3rem;
     }
     .commentsContainer {
         margin-left: 1rem;
@@ -44,7 +41,6 @@
     .section {
         width: 95%;
         margin: 0 auto;
-        padding-top: 2rem;
     }
     .commentsContainer {
         margin-left: 0;

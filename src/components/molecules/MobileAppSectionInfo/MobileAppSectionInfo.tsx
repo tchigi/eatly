@@ -18,7 +18,7 @@ function MobileAppSectionInfo() {
                     These foods promote overall wellness by support healthy digestion and boosting immunity
                 </li>
             </ul>
-            <Button label={"Download"} iconType={"arrowRight"}/>
+            <Button label={"Download"} iconType={"arrowRight"} iconPos={"right"}/>
             <CustomImage source={"src/assets/images/arrowMobile.png"} altText={"arrowMobile"}
                          imageStyles={styles.arrow}/>
         </div>
