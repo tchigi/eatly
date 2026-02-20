@@ -9,13 +9,15 @@ interface LinkProps {
     linkTo: string;
     iconType?: string;
     type?: string;
+    highlighted?: boolean;
 }
 
-function LinkAtom({children, linkTo, iconType, type = "header"}: LinkProps) {
+function LinkAtom({children, linkTo, iconType, type = "header", highlighted}: LinkProps) {
     const location = useLocation()
 
     function isActiveHandler(isActive: boolean) {
-        return isActive && (location.pathname !== "/") ? styles.active : `${styles.link} ${styles[type]}`
+        const base = isActive && (location.pathname !== "/") ? styles.active : `${styles.link} ${styles[type]}`
+        return highlighted ? `${base} ${styles.highlighted}` : base
     }
 
     if (type === "shorts") {

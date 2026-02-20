@@ -46,3 +46,16 @@
     font-weight: 600;
     line-height: 2.62rem;
 }
+
+.highlighted {
+    border: 0.09rem solid rgb(108, 95, 188);
+    border-radius: 6.25rem;
+    padding: 0.4rem 1.2rem;
+    color: rgb(108, 95, 188);
+}
+
+.highlighted:hover {
+    background-color: rgb(108, 95, 188);
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
