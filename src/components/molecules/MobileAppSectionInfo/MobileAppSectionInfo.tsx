@@ -2,6 +2,7 @@ import styles from "./mobileAppSectionInfo.module.css"
 import Heading from "../../atoms/Heading/Heading.tsx";
 import Button from "../../atoms/Button/Button.tsx";
 import CustomImage from "../../atoms/Image/CustomImage.tsx";
+import arrowMobile from "../../../assets/images/arrowMobile.png";
 
 function MobileAppSectionInfo() {
     return (
@@ -19,7 +20,7 @@ function MobileAppSectionInfo() {
                 </li>
             </ul>
             <Button label={"Download"} iconType={"arrowRight"} iconPos={"right"}/>
-            <CustomImage source={"src/assets/images/arrowMobile.png"} altText={"arrowMobile"}
+            <CustomImage source={arrowMobile} altText={"arrowMobile"}
                          imageStyles={styles.arrow}/>
         </div>
     );
